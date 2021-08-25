@@ -2,8 +2,11 @@ import tkinter
 import datetime
 import threading
 import time
+from playsound import playsound
+import os
 
 
+sound_path = os.path.dirname(os.path.abspath(__file__)) + "/../sound.mp3"
 
 def main():
     root = tkinter.Tk()
@@ -26,6 +29,8 @@ def main():
             id_time = format(id_now.hour, "02") + ":" + format(id_now.minute, "02")
             jp_label["text"] = jp_time
             id_label["text"] = id_time
+            if jp_now.hour == 19 and jp_now.minute == 30:
+                playsound(sound_path)
             time.sleep(1)
 
 
