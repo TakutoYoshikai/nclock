@@ -1,5 +1,5 @@
 # nclock
-<img src="./nclock.png" width="500">
+<img src="./nclock.png" width="200">
 nclock is a clock application to show Japan time and Indonesia time for checking my girlfriend time. 
 
 ### Usage
