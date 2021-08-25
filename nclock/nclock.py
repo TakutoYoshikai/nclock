@@ -29,7 +29,7 @@ def main():
             id_time = format(id_now.hour, "02") + ":" + format(id_now.minute, "02")
             jp_label["text"] = jp_time
             id_label["text"] = id_time
-            if jp_now.hour == 19 and jp_now.minute == 30:
+            if jp_now.hour == 19 and jp_now.minute == 30 and jp_now.second == 0:
                 playsound(sound_path)
             time.sleep(1)
 
