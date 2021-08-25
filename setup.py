@@ -8,7 +8,7 @@ setup(
     author = 'Takuto Yoshikai',
     author_email = 'takuto.yoshikai@gmail.com',
     description = 'nuru clock',
-    install_requires = ['setuptools'],
+    install_requires = ['setuptools', "playsound"],
     packages = find_packages(),
     entry_points={
         "console_scripts": [
