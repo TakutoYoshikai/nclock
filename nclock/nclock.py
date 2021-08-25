@@ -12,6 +12,7 @@ sound_path = os.path.dirname(os.path.abspath(__file__)) + "/../sound.mp3"
 def main():
     root = tkinter.Tk()
     root.title("Nuru Clock")
+    root.resizable(False, False)
     width = root.winfo_screenwidth()
     y = width - 200
     root.geometry("200x70+" + str(y) + "+0")
