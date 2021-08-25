@@ -2,6 +2,7 @@ import tkinter
 import datetime
 import threading
 import time
+import pytz
 from playsound import playsound
 import os
 
@@ -23,7 +24,7 @@ def main():
 
     def job():
         while True:
-            jp_now = datetime.datetime.now()
+            jp_now = datetime.datetime.now(tz=pytz.timezone("Asia/Tokyo"))
             id_now = jp_now - datetime.timedelta(hours=2)
             jp_time = format(jp_now.hour, "02") + ":" + format(jp_now.minute, "02")
             id_time = format(id_now.hour, "02") + ":" + format(id_now.minute, "02")
